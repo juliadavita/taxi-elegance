@@ -1,0 +1,73 @@
+$grid-column-gap: 20px;
+
+@mixin grid {
+
+    max-width: 1350px;
+    margin: 0 auto;
+  	padding: 60px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: $grid-column-gap;
+    grid-row-gap: 0px;
+
+    @include mobile {
+      grid-column-gap: 0px;
+      padding: 40px 20px;
+    }
+}
+
+@mixin clearInput {
+  -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ border: none;
+ position: relative;
+}
+
+@mixin inner_grid {
+  
+  grid-column: 1 / span 12;
+
+  @include ipad-portrait{
+    grid-column: span 12!important;
+  }
+  @include mobile{
+    grid-column: span 12!important;
+  }
+
+  @include ie-old {
+      overflow: hidden;
+    }
+}
+
+@mixin content_grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: $grid-column-gap;
+    grid-row-gap: 0px;
+
+    @include mobile {
+      grid-column-gap: 0px;
+    }
+
+    @include ie-old {
+      overflow: hidden;
+    }
+}
+
+
+.mobileOnly {
+  display: none !important;
+  @include mobile {
+    display: block !important;
+  }
+}
+
+.mobileHide {
+  @include mobile {
+    display: none !important;
+  }
+}

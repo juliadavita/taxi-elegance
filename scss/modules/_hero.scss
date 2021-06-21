@@ -1,0 +1,64 @@
+#hero{
+    height:1000px;   
+    background-image: url(./../img/gerrit-vermeulen.png);
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+
+    .banner{
+        height:20px;
+        background-color: $yellow;
+
+        p{
+            font-weight: bold;
+            text-align: right;
+        }
+        
+    }
+
+        .grid{
+            
+
+            .inner_grid{
+
+                
+
+                .content_grid{
+
+                    
+                    .logo{
+                        grid-column: span 2;
+                        height: 75px;
+                        background-image: url('./../../img/TE_LOGO.png');
+                        background-position: center center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+
+                    .navbar{
+                        grid-column: span 10;
+
+
+                        .inner_grid{
+
+                            .content_grid{
+                                grid-template-columns: repeat(6, 1fr);
+
+                                .nav-link{
+                                    text-transform: uppercase;
+                                    text-decoration: none;
+                                    color: $white;
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                }
+                            
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        
+}
+
