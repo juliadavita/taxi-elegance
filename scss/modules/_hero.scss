@@ -37,6 +37,7 @@
 
                     .navbar{
                         grid-column: span 10;
+                        margin: auto 0;
 
 
                         .inner_grid{
@@ -54,6 +55,19 @@
                             
                             }
                         }
+                    }
+
+                    .welcome-text{
+                        grid-column: 2/ span 10;
+                        margin-top: 250px;
+
+                        h2{
+                            color: white;
+                        }
+                    }
+
+                    .btn-reserve{
+                        grid-column: 6/ span 2;
                     }
 
                 }

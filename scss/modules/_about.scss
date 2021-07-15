@@ -1,0 +1,46 @@
+#about{
+    background-image: url(./../img/gerrit-vermeulen.png);
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+
+
+        .grid{
+            
+
+            .inner_grid{
+
+
+                .content_grid{
+                    color: $white;
+
+                    .subtitle{
+                        
+                        h5{
+                            color: $white;
+                        }
+                    }
+
+                    .title{
+                        grid-column: span 12;
+                        margin-bottom: 40px;
+                        
+                    }
+
+                    .text-column{
+                        grid-column: 2/ span 5;
+                        text-align: left;
+                    }
+
+                    .photo-column{
+                        grid-column: span 5;
+                        background-color: red;
+                    }
+
+
+                }
+            }
+        }
+        
+}
+

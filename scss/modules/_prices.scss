@@ -1,0 +1,113 @@
+#prices{
+    background-color: $yellow;
+    
+    .grid{
+
+        .inner_grid{
+            
+            .content_grid{
+
+                .subtitle{
+                     
+                    h5{
+                        border-bottom: 3px solid $black;
+
+                    }
+                }
+
+                .column-100{
+                    grid-column: 3/ span 8;
+                    text-align: left;
+                    
+
+                    .title{
+                        background-color: $black;
+                        padding-left:20px;
+
+                        .inner_grid{
+            
+                            .content_grid{
+                                color: $white;
+
+                                h4{
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    grid-column: span 3;
+                                }
+                            }
+                        }
+                    }
+
+                    .content{
+                        background-color: $white;
+                        width: 100%;
+
+                        .inner_grid{
+            
+                            .content_grid{
+                                color: $black;
+
+                                p{
+                                    margin: 20px;
+                                    grid-column: span 3;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .column-50{
+                    grid-column: 3/ span 4;
+                    text-align: left;
+                    margin-top:20px;
+                    
+                    &:nth-child(even){
+                        grid-column: 7/ span 4;
+                    }
+                    
+
+                    .title{
+                        background-color: $black;
+                        padding-left:20px;
+
+                        .inner_grid{
+            
+                            .content_grid{
+                                grid-template-columns: 1fr;
+                                color: $white;
+
+                                h4{
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    grid-column: span 4;
+                                }
+                            }
+                        }
+                    }
+
+                    .content{
+                        background-color: $white;
+                        width: 100%;
+
+                        .inner_grid{
+                            
+            
+                            .content_grid{
+                                grid-template-columns: repeat(2, 1fr);
+                                color: $black;
+
+                                p{
+                                    margin: 20px;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            
+
+
+            }
+        }
+    }
+}

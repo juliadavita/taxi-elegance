@@ -7,6 +7,10 @@
 @import "styles/headings";
 
 @import "modules/hero";
+@import "modules/services";
+@import "modules/prices";
+@import "modules/about";
+@import "modules/contact";
 
 
 html {
@@ -49,4 +53,20 @@ section {
   
   .content_grid {
 	  @include content_grid;
+  }
+
+  .subtitle{
+	  grid-column: span 12;
+	  text-transform: uppercase;
+	  margin-bottom: 20px;
+
+	  h5{
+		display:inline-block;
+		color: $black;
+		font-weight: 700;
+		border-bottom: 3px solid $yellow;
+		padding-bottom: 5px;
+	  }
+
+
   }

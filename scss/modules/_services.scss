@@ -1,0 +1,66 @@
+#services{
+    
+
+    .grid{
+
+        .inner_grid{
+            
+
+            .content_grid{
+                
+                .service-column{
+                    grid-column: span 4;
+                    margin-bottom: 50px;
+
+                    .service-title{
+                        height: 65px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        margin-bottom:20px;  
+
+                        h4{
+                            color: $white;
+                            margin:0;
+                            padding: 18px;
+                            font-weight: 600;
+                        }
+
+                        &.general{
+                            background-image: url(../../img/algemene-service.png);
+                        }
+
+                        &.airport{
+                            background-image: url(../../img/airport-service.png);
+                        }
+
+                        &.private{
+                            background-image: url(../../img/prive-chauffeur.png);
+                        }
+
+                        &.international{
+                            background-image: url(../../img/internationale-ritten.png);
+                        }
+
+                        &.care{
+                            background-image: url(../../img/zorg-vervoer.png);
+                        }
+
+                        &.belgie{
+                            background-image: url(../../img/belgie-duitsland.png);
+                        }
+
+ 
+                    }
+
+                    p{
+                        text-align: left;
+                        margin: 0 10px;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
