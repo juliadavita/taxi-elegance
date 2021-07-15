@@ -6,12 +6,18 @@
     background-size: cover;
 
     .banner{
-        height:20px;
+        padding: 10px 20px;
         background-color: $yellow;
 
-        p{
+        a{
             font-weight: bold;
             text-align: right;
+            grid-column: span 12;
+            font-weight: bold;
+            font-size: 13px;
+            text-decoration: none;
+            color: $black;
+            cursor: pointer;
         }
         
     }
