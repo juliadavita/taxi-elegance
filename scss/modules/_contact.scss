@@ -40,11 +40,11 @@
                                 height: 33px;
 
                                 &.phone{
-                                    background-image: url(../../img/icons/call-icon.png);
+                                    background-image: url(./../img/icons/call-icon.png);
                                 }
 
                                 &.mail{
-                                    background-image: url(../../img/icons/mail-icon.png);
+                                    background-image: url(./../img/icons/mail-icon.png);
                                 }
                             }
         
@@ -68,7 +68,7 @@
                 }
 
                 .logo{
-                    background-image: url(../../img/TE_LOGO.png);
+                    background-image: url(./../img/TE_LOGO.png);
                     background-position: center center;
                     background-repeat: none;
                     background-size: contain;
