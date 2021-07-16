@@ -6,6 +6,7 @@
 
 
     .grid{
+        padding: 30px 20px;
         
 
         .inner_grid{
@@ -75,6 +76,16 @@
                     background-repeat: no-repeat;
                     grid-column: 9/ span 3;
                     grid-row: span 2;
+                }
+
+                .more-info{
+                    grid-column: span 12;
+                    padding: 0 auto;
+
+                    p{
+                        color: $grey;
+                        font-weight: 500;
+                    }
                 }
 
 
