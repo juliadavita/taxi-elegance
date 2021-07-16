@@ -55,11 +55,20 @@
                         background-position: center center;
                         background-size: contain;
                         background-repeat: no-repeat;
+
+                        @include ipad-portrait{
+                            grid-column: span 3;
+                        }
                     }
 
                     .navbar{
                         grid-column: span 10;
                         margin: auto 0;
+                        display: block;
+
+                        @include ipad-portrait{
+                            display: none;
+                        }
 
 
                         .inner_grid{
@@ -85,6 +94,44 @@
                         }
                     }
 
+                    .hamburger-menu{
+                        display: none;
+
+                        @include ipad-portrait{
+                            display: block;
+                            grid-column: 12;
+                            cursor: pointer;
+
+                            .hamburger-line{
+                                width: 33px;
+                                height: 3px;
+                                margin-bottom: 7px;
+                                position: relative;
+                                background: $white;
+                                border-radius: 3px;
+                                z-index: 1;
+                            }
+
+                        }
+                    }
+
+                    .resp-menu{
+                        display:none;
+
+                        @include ipad-portrait{
+                            // display:block;
+                            position:absolute;
+                            width:100px;
+                            height: 100%;
+                            background-color: $white;
+                            right: 0;
+                            top: 0;
+                        }
+
+                    }
+
+
+
                     .welcome-text{
                         grid-column: 2/ span 10;
                         margin-top: 250px;
@@ -92,11 +139,12 @@
                         h2{
                             color: white;
                         }
+
+                        @include ipad-portrait{
+                            margin-top:100px;
+                        }
                     }
 
-                    .btn-reserve{
-                        grid-column: 6/ span 2;
-                    }
 
                 }
             }

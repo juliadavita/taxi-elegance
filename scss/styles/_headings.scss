@@ -5,6 +5,10 @@ h1{
 
 h2{
     font-size: 40px;
+
+    @include ipad-portrait{
+        font-size: 30px;
+    }
 }
 
 h3{
